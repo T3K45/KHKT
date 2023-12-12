@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = Phần Mềm Quản Lý Và Tổng Hợp Lỗi Vi Phạm
 
 # (str) Package name
-package.name = myapp
+package.name = Phần Mềm Quản Lý Và Tổng Hợp Lỗi Vi Phạm
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -37,17 +37,17 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3==3.10.7,hostpython3==3.10.7,kivy,pillow,nguyendinhchien,beautifulsoup4,wmi
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
+presplash.filename = %(source.dir)s/icon.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = %(source.dir)s/icon.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.10.7
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
